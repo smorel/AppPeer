@@ -7,17 +7,28 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		0D4E225B1829972C00BE60B5 /* AppPeer Documentation */ = {
+		0D4E225B1829972C00BE60B5 /* AppPeerMac Documentation */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 0D4E226A1829972C00BE60B5 /* Build configuration list for PBXAggregateTarget "AppPeer Documentation" */;
+			buildConfigurationList = 0D4E226A1829972C00BE60B5 /* Build configuration list for PBXAggregateTarget "AppPeerMac Documentation" */;
 			buildPhases = (
 				0D4E225A1829972C00BE60B5 /* ShellScript */,
 			);
 			dependencies = (
 				0D4E225D1829972C00BE60B5 /* PBXTargetDependency */,
 			);
-			name = "AppPeer Documentation";
+			name = "AppPeerMac Documentation";
 			productName = "AppPeer Documentation";
+		};
+		9645422118F31530008009FB /* AppPeerIOS Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9645422218F31530008009FB /* Build configuration list for PBXAggregateTarget "AppPeerIOS Documentation" */;
+			buildPhases = (
+				9645422518F31545008009FB /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "AppPeerIOS Documentation";
+			productName = "AppPeerIOS Documentation";
 		};
 /* End PBXAggregateTarget section */
 
@@ -377,7 +388,8 @@
 			targets = (
 				0D6866E318283B0E00BF2519 /* AppPeerMAC */,
 				0D4E22571829972C00BE60B5 /* AppPeerIOS */,
-				0D4E225B1829972C00BE60B5 /* AppPeer Documentation */,
+				0D4E225B1829972C00BE60B5 /* AppPeerMac Documentation */,
+				9645422118F31530008009FB /* AppPeerIOS Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -417,6 +429,19 @@
 			shellScript = "rm -f \"${TARGET_BUILD_DIR}/${PROJECT}.framework/Resources/Info.plist\"\ntouch \"${SRCROOT}/Resources\"";
 		};
 		0D4E225A1829972C00BE60B5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "UFW_TARGET=${PROJECT}\nUFW_IPHONE_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n\n# Generates Documentation\nappledoc --create-docset --install-docset --include \"${SRCROOT}/Documentation/\" --index-desc \"${SRCROOT}/Documentation/index.markdown\" --output \"${UFW_IPHONE_DIR}/Documentation/output\" --docset-install-path \"${UFW_IPHONE_DIR}/Documentation/output\" --project-name \"${UFW_TARGET}\" --project-company \"Wherecloud\" --company-id \"com.wherecloud\" --project-version \"${FRAMEWORK_VERSION}-dev\" --warn-undocumented-object --exit-threshold 2 \"${TARGET_BUILD_DIR}/${UFW_TARGET}.framework/Headers\"\n\n\ncp -R -L \"${UFW_IPHONE_DIR}/Documentation/output/com.wherecloud.${UFW_TARGET}.docset\" \"${USER_LIBRARY_DIR}/Developer/Shared/Documentation/DocSets\"";
+		};
+		9645422518F31545008009FB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -675,6 +700,20 @@
 			};
 			name = Release;
 		};
+		9645422318F31530008009FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9645422418F31530008009FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -687,7 +726,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D4E226A1829972C00BE60B5 /* Build configuration list for PBXAggregateTarget "AppPeer Documentation" */ = {
+		0D4E226A1829972C00BE60B5 /* Build configuration list for PBXAggregateTarget "AppPeerMac Documentation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D4E22671829972C00BE60B5 /* Debug */,
@@ -713,6 +752,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9645422218F31530008009FB /* Build configuration list for PBXAggregateTarget "AppPeerIOS Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9645422318F31530008009FB /* Debug */,
+				9645422418F31530008009FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
