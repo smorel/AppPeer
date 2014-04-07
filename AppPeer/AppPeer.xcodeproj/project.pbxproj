@@ -511,7 +511,7 @@
 				FRAMEWORK_VERSION = 1.0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppPeer/AppPeer-Prefix.pch";
-				INFOPLIST_FILE = "AppPeer/AppPeer-Info.plist";
+				INFOPLIST_FILE = "AppPeer/AppPeerIOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = AppPeerIOS;
 				SDKROOT = iphoneos;
@@ -537,7 +537,7 @@
 				FRAMEWORK_VERSION = 1.0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppPeer/AppPeer-Prefix.pch";
-				INFOPLIST_FILE = "AppPeer/AppPeer-Info.plist";
+				INFOPLIST_FILE = "AppPeer/AppPeerIOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = AppPeerIOS;
 				SDKROOT = iphoneos;
@@ -655,7 +655,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppPeer/AppPeer-Prefix.pch";
-				INFOPLIST_FILE = "AppPeer/AppPeer-Info.plist";
+				INFOPLIST_FILE = "AppPeer/AppPeerMAC-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = AppPeerMac;
 				WRAPPER_EXTENSION = framework;
@@ -672,7 +672,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppPeer/AppPeer-Prefix.pch";
-				INFOPLIST_FILE = "AppPeer/AppPeer-Info.plist";
+				INFOPLIST_FILE = "AppPeer/AppPeerMAC-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = AppPeerMac;
 				WRAPPER_EXTENSION = framework;
