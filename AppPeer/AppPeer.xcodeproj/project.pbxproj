@@ -83,7 +83,7 @@
 
 /* Begin PBXFileReference section */
 		0D4E22581829972C00BE60B5 /* AppPeerIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = AppPeerIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D4E22601829972C00BE60B5 /* AppPeer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppPeer-Info.plist"; sourceTree = "<group>"; };
+		0D4E22601829972C00BE60B5 /* AppPeerIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppPeerIOS-Info.plist"; sourceTree = "<group>"; };
 		0D4E22621829972C00BE60B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0D4E22641829972C00BE60B5 /* AppPeer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppPeer-Prefix.pch"; sourceTree = "<group>"; };
 		0D5CF0D01829CA3200BF9945 /* NSNetService+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNetService+Additions.h"; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		0D6866EA18283B0E00BF2519 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0D6866EB18283B0E00BF2519 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0D6866EC18283B0E00BF2519 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		0D6866EF18283B0E00BF2519 /* AppPeer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppPeer-Info.plist"; sourceTree = "<group>"; };
+		0D6866EF18283B0E00BF2519 /* AppPeerMAC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AppPeerMAC-Info.plist"; sourceTree = "<group>"; };
 		0D6866F118283B0E00BF2519 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0D6866F318283B0E00BF2519 /* AppPeer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppPeer-Prefix.pch"; sourceTree = "<group>"; };
 		0D6866F418283B0E00BF2519 /* AppPeer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppPeer.h; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		0D4E225F1829972C00BE60B5 /* iOS Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0D4E22601829972C00BE60B5 /* AppPeer-Info.plist */,
+				0D4E22601829972C00BE60B5 /* AppPeerIOS-Info.plist */,
 				0D4E22611829972C00BE60B5 /* InfoPlist.strings */,
 				0D4E22641829972C00BE60B5 /* AppPeer-Prefix.pch */,
 			);
@@ -221,7 +221,7 @@
 		0D6866EE18283B0E00BF2519 /* MAC Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0D6866EF18283B0E00BF2519 /* AppPeer-Info.plist */,
+				0D6866EF18283B0E00BF2519 /* AppPeerMAC-Info.plist */,
 				0D6866F018283B0E00BF2519 /* InfoPlist.strings */,
 				0D6866F318283B0E00BF2519 /* AppPeer-Prefix.pch */,
 			);
@@ -316,9 +316,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0D4E22571829972C00BE60B5 /* iOS AppPeer */ = {
+		0D4E22571829972C00BE60B5 /* AppPeerIOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D4E22691829972C00BE60B5 /* Build configuration list for PBXNativeTarget "iOS AppPeer" */;
+			buildConfigurationList = 0D4E22691829972C00BE60B5 /* Build configuration list for PBXNativeTarget "AppPeerIOS" */;
 			buildPhases = (
 				0D4E22521829972C00BE60B5 /* Sources */,
 				0D4E22531829972C00BE60B5 /* Frameworks */,
@@ -330,14 +330,14 @@
 			);
 			dependencies = (
 			);
-			name = "iOS AppPeer";
+			name = AppPeerIOS;
 			productName = AppPeer;
 			productReference = 0D4E22581829972C00BE60B5 /* AppPeerIOS.framework */;
 			productType = "com.apple.product-type.framework.static";
 		};
-		0D6866E318283B0E00BF2519 /* MAC AppPeer */ = {
+		0D6866E318283B0E00BF2519 /* AppPeerMAC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D68670C18283B0E00BF2519 /* Build configuration list for PBXNativeTarget "MAC AppPeer" */;
+			buildConfigurationList = 0D68670C18283B0E00BF2519 /* Build configuration list for PBXNativeTarget "AppPeerMAC" */;
 			buildPhases = (
 				0D6866DF18283B0E00BF2519 /* Sources */,
 				0D6866E018283B0E00BF2519 /* Frameworks */,
@@ -348,7 +348,7 @@
 			);
 			dependencies = (
 			);
-			name = "MAC AppPeer";
+			name = AppPeerMAC;
 			productName = AppPeer;
 			productReference = 0D6866E418283B0E00BF2519 /* AppPeerMac.framework */;
 			productType = "com.apple.product-type.framework";
@@ -375,8 +375,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0D6866E318283B0E00BF2519 /* MAC AppPeer */,
-				0D4E22571829972C00BE60B5 /* iOS AppPeer */,
+				0D6866E318283B0E00BF2519 /* AppPeerMAC */,
+				0D4E22571829972C00BE60B5 /* AppPeerIOS */,
 				0D4E225B1829972C00BE60B5 /* AppPeer Documentation */,
 			);
 		};
@@ -470,7 +470,7 @@
 /* Begin PBXTargetDependency section */
 		0D4E225D1829972C00BE60B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0D4E22571829972C00BE60B5 /* iOS AppPeer */;
+			target = 0D4E22571829972C00BE60B5 /* AppPeerIOS */;
 			targetProxy = 0D4E225C1829972C00BE60B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -682,7 +682,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D4E22691829972C00BE60B5 /* Build configuration list for PBXNativeTarget "iOS AppPeer" */ = {
+		0D4E22691829972C00BE60B5 /* Build configuration list for PBXNativeTarget "AppPeerIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D4E22651829972C00BE60B5 /* Debug */,
@@ -709,7 +709,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D68670C18283B0E00BF2519 /* Build configuration list for PBXNativeTarget "MAC AppPeer" */ = {
+		0D68670C18283B0E00BF2519 /* Build configuration list for PBXNativeTarget "AppPeerMAC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D68670D18283B0E00BF2519 /* Debug */,
