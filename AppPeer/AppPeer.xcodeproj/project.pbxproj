@@ -14,7 +14,7 @@
 				0D4E225A1829972C00BE60B5 /* ShellScript */,
 			);
 			dependencies = (
-				0D4E225D1829972C00BE60B5 /* PBXTargetDependency */,
+				9645422918F315C8008009FB /* PBXTargetDependency */,
 			);
 			name = "AppPeerMac Documentation";
 			productName = "AppPeer Documentation";
@@ -26,6 +26,7 @@
 				9645422518F31545008009FB /* ShellScript */,
 			);
 			dependencies = (
+				9645422718F315C1008009FB /* PBXTargetDependency */,
 			);
 			name = "AppPeerIOS Documentation";
 			productName = "AppPeerIOS Documentation";
@@ -83,12 +84,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0D4E225C1829972C00BE60B5 /* PBXContainerItemProxy */ = {
+		9645422618F315C1008009FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0D6866DB18283B0E00BF2519 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0D4E22571829972C00BE60B5;
-			remoteInfo = AppPeer;
+			remoteInfo = AppPeerIOS;
+		};
+		9645422818F315C8008009FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D6866DB18283B0E00BF2519 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D6866E318283B0E00BF2519;
+			remoteInfo = AppPeerMAC;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -452,7 +460,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "UFW_TARGET=${PROJECT}\nUFW_IPHONE_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n\n# Generates Documentation\nappledoc --create-docset --install-docset --include \"${SRCROOT}/Documentation/\" --index-desc \"${SRCROOT}/Documentation/index.markdown\" --output \"${UFW_IPHONE_DIR}/Documentation/output\" --docset-install-path \"${UFW_IPHONE_DIR}/Documentation/output\" --project-name \"${UFW_TARGET}\" --project-company \"Wherecloud\" --company-id \"com.wherecloud\" --project-version \"${FRAMEWORK_VERSION}-dev\" --warn-undocumented-object --exit-threshold 2 \"${TARGET_BUILD_DIR}/${UFW_TARGET}.framework/Headers\"\n\n\ncp -R -L \"${UFW_IPHONE_DIR}/Documentation/output/com.wherecloud.${UFW_TARGET}.docset\" \"${USER_LIBRARY_DIR}/Developer/Shared/Documentation/DocSets\"";
+			shellScript = "UFW_TARGET=${PROJECT}\nUFW_IPHONE_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n\n# Generates Documentation\nappledoc --create-docset --install-docset --include \"${SRCROOT}/Documentation/\" --index-desc \"${SRCROOT}/Documentation/index.markdown\" --output \"${UFW_IPHONE_DIR}/Documentation/output\" --docset-install-path \"${UFW_IPHONE_DIR}/Documentation/output\" --project-name \"${UFW_TARGET}\" --project-company \"Wherecloud\" --company-id \"com.wherecloud\" --project-version \"${FRAMEWORK_VERSION}-dev\" --warn-undocumented-object --exit-threshold 2 \"${TARGET_BUILD_DIR}/AppPeerIOS.framework/Headers\"\n\n\ncp -R -L \"${UFW_IPHONE_DIR}/Documentation/output/com.wherecloud.AppPeerIOS.docset\" \"${USER_LIBRARY_DIR}/Developer/Shared/Documentation/DocSets\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -493,10 +501,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0D4E225D1829972C00BE60B5 /* PBXTargetDependency */ = {
+		9645422718F315C1008009FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0D4E22571829972C00BE60B5 /* AppPeerIOS */;
-			targetProxy = 0D4E225C1829972C00BE60B5 /* PBXContainerItemProxy */;
+			targetProxy = 9645422618F315C1008009FB /* PBXContainerItemProxy */;
+		};
+		9645422918F315C8008009FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D6866E318283B0E00BF2519 /* AppPeerMAC */;
+			targetProxy = 9645422818F315C8008009FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
