@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D4FD1211826CD0700E064A0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4FD1201826CD0700E064A0 /* Cocoa.framework */; };
+		0D4FD12D1826CD0700E064A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FD12C1826CD0700E064A0 /* main.m */; };
+		0D4FD1311826CD0700E064A0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0D4FD12F1826CD0700E064A0 /* Credits.rtf */; };
+		0D4FD1341826CD0700E064A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FD1331826CD0700E064A0 /* AppDelegate.m */; };
+		0D4FD1391826CD0700E064A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4FD1381826CD0700E064A0 /* Images.xcassets */; };
+		0D5006591829AF6F00005697 /* AppPeerMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5006581829AF6F00005697 /* AppPeerMac.framework */; };
+		0DB83E431846AF1100471B99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D4FD1291826CD0700E064A0 /* InfoPlist.strings */; };
+		0DB83E4B1846D5E600471B99 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D4FD1351826CD0700E064A0 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D4FD11D1826CD0700E064A0 /* PeerMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeerMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4FD1201826CD0700E064A0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0D4FD1231826CD0700E064A0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0D4FD1241826CD0700E064A0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0D4FD1251826CD0700E064A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0D4FD1281826CD0700E064A0 /* PeerMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PeerMac-Info.plist"; sourceTree = "<group>"; };
+		0D4FD12A1826CD0700E064A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0D4FD12C1826CD0700E064A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D4FD12E1826CD0700E064A0 /* PeerMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PeerMac-Prefix.pch"; sourceTree = "<group>"; };
+		0D4FD1301826CD0700E064A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		0D4FD1321826CD0700E064A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0D4FD1331826CD0700E064A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0D4FD1361826CD0700E064A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0D4FD1381826CD0700E064A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0D5006581829AF6F00005697 /* AppPeerMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppPeerMac.framework; path = "../../../Library/Developer/Xcode/DerivedData/PeerDemo-epacbielfeheodezsfkvtawcwicd/Build/Products/Debug/AppPeerMac.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D4FD11A1826CD0700E064A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D5006591829AF6F00005697 /* AppPeerMac.framework in Frameworks */,
+				0D4FD1211826CD0700E064A0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D4FD1141826CD0700E064A0 = {
+			isa = PBXGroup;
+			children = (
+				0D4FD1261826CD0700E064A0 /* PeerMac */,
+				0D4FD11F1826CD0700E064A0 /* Frameworks */,
+				0D4FD11E1826CD0700E064A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D4FD11E1826CD0700E064A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D4FD11D1826CD0700E064A0 /* PeerMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D4FD11F1826CD0700E064A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D5006581829AF6F00005697 /* AppPeerMac.framework */,
+				0D4FD1201826CD0700E064A0 /* Cocoa.framework */,
+				0D4FD1221826CD0700E064A0 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D4FD1221826CD0700E064A0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D4FD1231826CD0700E064A0 /* AppKit.framework */,
+				0D4FD1241826CD0700E064A0 /* CoreData.framework */,
+				0D4FD1251826CD0700E064A0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0D4FD1261826CD0700E064A0 /* PeerMac */ = {
+			isa = PBXGroup;
+			children = (
+				0D4FD1321826CD0700E064A0 /* AppDelegate.h */,
+				0D4FD1331826CD0700E064A0 /* AppDelegate.m */,
+				0D4FD1351826CD0700E064A0 /* MainMenu.xib */,
+				0D4FD1381826CD0700E064A0 /* Images.xcassets */,
+				0D4FD1271826CD0700E064A0 /* Supporting Files */,
+			);
+			path = PeerMac;
+			sourceTree = "<group>";
+		};
+		0D4FD1271826CD0700E064A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D4FD1281826CD0700E064A0 /* PeerMac-Info.plist */,
+				0D4FD1291826CD0700E064A0 /* InfoPlist.strings */,
+				0D4FD12C1826CD0700E064A0 /* main.m */,
+				0D4FD12E1826CD0700E064A0 /* PeerMac-Prefix.pch */,
+				0D4FD12F1826CD0700E064A0 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D4FD11C1826CD0700E064A0 /* PeerMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D4FD14E1826CD0700E064A0 /* Build configuration list for PBXNativeTarget "PeerMac" */;
+			buildPhases = (
+				0D4FD1191826CD0700E064A0 /* Sources */,
+				0D4FD11A1826CD0700E064A0 /* Frameworks */,
+				0D4FD11B1826CD0700E064A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeerMac;
+			productName = PeerMac;
+			productReference = 0D4FD11D1826CD0700E064A0 /* PeerMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D4FD1151826CD0700E064A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Wherecloud Inc.";
+			};
+			buildConfigurationList = 0D4FD1181826CD0700E064A0 /* Build configuration list for PBXProject "PeerMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D4FD1141826CD0700E064A0;
+			productRefGroup = 0D4FD11E1826CD0700E064A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D4FD11C1826CD0700E064A0 /* PeerMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D4FD11B1826CD0700E064A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DB83E431846AF1100471B99 /* InfoPlist.strings in Resources */,
+				0D4FD1391826CD0700E064A0 /* Images.xcassets in Resources */,
+				0D4FD1311826CD0700E064A0 /* Credits.rtf in Resources */,
+				0DB83E4B1846D5E600471B99 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D4FD1191826CD0700E064A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4FD1341826CD0700E064A0 /* AppDelegate.m in Sources */,
+				0D4FD12D1826CD0700E064A0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0D4FD1291826CD0700E064A0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D4FD12A1826CD0700E064A0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0D4FD12F1826CD0700E064A0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D4FD1301826CD0700E064A0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		0D4FD1351826CD0700E064A0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D4FD1361826CD0700E064A0 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D4FD14C1826CD0700E064A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0D4FD14D1826CD0700E064A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0D4FD14F1826CD0700E064A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/PeerDemo-epacbielfeheodezsfkvtawcwicd/Build/Products/Debug",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PeerMac/PeerMac-Prefix.pch";
+				INFOPLIST_FILE = "PeerMac/PeerMac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0D4FD1501826CD0700E064A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/PeerDemo-epacbielfeheodezsfkvtawcwicd/Build/Products/Debug",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PeerMac/PeerMac-Prefix.pch";
+				INFOPLIST_FILE = "PeerMac/PeerMac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D4FD1181826CD0700E064A0 /* Build configuration list for PBXProject "PeerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4FD14C1826CD0700E064A0 /* Debug */,
+				0D4FD14D1826CD0700E064A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D4FD14E1826CD0700E064A0 /* Build configuration list for PBXNativeTarget "PeerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4FD14F1826CD0700E064A0 /* Debug */,
+				0D4FD1501826CD0700E064A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D4FD1151826CD0700E064A0 /* Project object */;
+}
