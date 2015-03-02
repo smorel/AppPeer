@@ -539,6 +539,7 @@
 				ARCHS = (
 					armv7s,
 					armv7,
+					arm64,
 				);
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -552,7 +553,7 @@
 				PRODUCT_NAME = AppPeerIOS;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "i386 armv7 armv7s x86_64";
+				VALID_ARCHS = "i386 armv7 armv7s x86_64 arm64";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -563,6 +564,7 @@
 				ARCHS = (
 					armv7s,
 					armv7,
+					arm64,
 				);
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -577,7 +579,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "i386 armv7 armv7s x86_64";
+				VALID_ARCHS = "i386 armv7 armv7s x86_64 arm64";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -773,6 +775,7 @@
 				9645422418F31530008009FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
