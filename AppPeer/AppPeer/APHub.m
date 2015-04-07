@@ -28,12 +28,17 @@
 }
 
 -(id)initWithName:(NSString *)name subdomain:(NSString *)subdomain{
+    return [self initWithName:name subdomain:subdomain port:63273];
+}
+
+-(id)initWithName:(NSString*)name subdomain:(NSString *)subdomain port:(NSInteger)port{
     if(self = [super init]){
-        self.peerCommunicator = [[APCommunicator alloc] initWithName:name subdomain:subdomain];
+        self.peerCommunicator = [[APCommunicator alloc] initWithName:name subdomain:subdomain port:port];
         self.peerCommunicator.delegate = self;
+        
         self.peerSource = [[APPeerSource alloc] init];
         self.peerSource.delegate = self;
-
+        
         __block APHub* bself = self;
         self.peerSource.filterBlock = ^BOOL(APPeer* peer){
             return ([bself.peerCommunicator.name isEqualToString:peer.name]);

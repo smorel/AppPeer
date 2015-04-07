@@ -22,6 +22,7 @@
 
 -(id)initWithName:(NSString*)name;
 -(id)initWithName:(NSString*)name subdomain:(NSString *)subdomain;
+-(id)initWithName:(NSString*)name subdomain:(NSString *)subdomain port:(NSInteger)port;
 
 -(void)open;
 -(void)close;

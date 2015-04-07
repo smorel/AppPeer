@@ -33,6 +33,8 @@
     NSMutableDictionary* _inSockets; //"name" = socket
     NSMutableDictionary* _peers; //"name" = peer
     
+    NSInteger _port;
+    
     // Sockets' userData property definition
     /*
      {
@@ -50,6 +52,10 @@
 }
 
 - (id) initWithName:(NSString*)name subdomain:(NSString *)subdomain{
+    return [self initWithName:name subdomain:subdomain port:63273];
+}
+
+- (id) initWithName:(NSString*)name subdomain:(NSString *)subdomain port:(NSInteger)port{
     if(self = [super init]){
         
         communicatorQueue = dispatch_queue_create([[NSString stringWithFormat:kDispatchQueueFormat, subdomain, name, nil] UTF8String], NULL);
@@ -62,6 +68,7 @@
         
         self.name = name;
         self.subdomain = subdomain;
+        self.port = port;
     }
     return self;
 }
@@ -83,8 +90,8 @@
     _acceptSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     
     NSError *err = nil;
-    if ([_acceptSocket acceptOnPort:0 error:&err]){
-        UInt16 port = [_acceptSocket localPort];
+    if ([_acceptSocket acceptOnPort:self.port error:&err]){
+        UInt16 port = self.port;//[_acceptSocket localPort];
         _netService = [[APNetService alloc] initWithName:self.name subdomain:self.subdomain port:port];
         [_netService publish];
         _netService.delegate = self;

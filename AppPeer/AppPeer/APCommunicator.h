@@ -35,9 +35,11 @@
 @property (nonatomic, retain) NSString *subdomain;
 @property (nonatomic, retain) NSData *dataSeparator;
 @property (nonatomic, readonly) NSArray* peers;
+@property (nonatomic, assign) NSInteger port;
 
 - (id)initWithName:(NSString*) name;
 - (id)initWithName:(NSString*) name subdomain:(NSString*) subdomain;
+- (id)initWithName:(NSString*) name subdomain:(NSString*) subdomain port:(NSInteger)port;
 
 - (void) adverstize;
 
