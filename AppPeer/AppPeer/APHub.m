@@ -129,8 +129,9 @@
     }
 }
 
--(void)peerCommunicator:(APCommunicator *)communicator didReceiveData:(NSData *)data fromPeer:(APPeer *)peer{
+-(void)peerCommunicator:(APCommunicator *)communicator didReceiveData:(NSData *)data fromPeerNamed:(NSString *)peerName{
     if(self.didReceiveDataFromPeerBlock){
+        APPeer* peer = [self peerNamed:peerName];
         self.didReceiveDataFromPeerBlock(data, peer);
     }
 }
@@ -139,6 +140,14 @@
     if(self.didDisconnectFromPeerBlock){
         self.didDisconnectFromPeerBlock(peer,error);
     }
+}
+
+- (APPeer*)peerNamed:(NSString*)peerName{
+    for(APPeer* peer in self.availablePeers){
+        if([peer.name isEqualToString:peerName])
+            return peer;
+    }
+    return nil;
 }
 
 @end

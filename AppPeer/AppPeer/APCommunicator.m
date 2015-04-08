@@ -252,8 +252,9 @@
         [sock readDataToData:self.dataSeparator withTimeout:-1 tag:AP_DATA_TAG];
         
     }else if(tag == AP_DATA_TAG){
-        if(self.delegate && [self.delegate respondsToSelector:@selector(peerCommunicator:didReceiveData:fromPeer:)]){
-            [self.delegate peerCommunicator:self didReceiveData:actuallyRead fromPeer:[self peerForSocket:sock]];
+        NSString* peerName = [(NSDictionary*)sock.userData valueForKey:kUserDataPeerNameKey];
+        if(self.delegate && [self.delegate respondsToSelector:@selector(peerCommunicator:didReceiveData:fromPeerNamed:)]){
+            [self.delegate peerCommunicator:self didReceiveData:actuallyRead fromPeerNamed:peerName];
         }
         
         // Queue a data read
@@ -296,12 +297,6 @@
     if(socket.userData){
         NSString* peerName = [(NSDictionary*)socket.userData valueForKey:kUserDataPeerNameKey];
         APPeer* peer = [_peers valueForKey:peerName];
-        if(!peer){
-            peer = [[APPeer alloc]init];
-            peer.name = peerName;
-            peer.addresses = [NSMutableArray arrayWithObject:[socket connectedAddress]];
-            [_peers setObject:peer forKey:peerName];
-        }
         return peer;
     }
     

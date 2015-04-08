@@ -20,7 +20,7 @@
 
 @protocol APCommunicatorDelegate
 
-- (void)peerCommunicator:(APCommunicator *)communicator didReceiveData:(NSData *)data fromPeer:(APPeer*)peer;
+- (void)peerCommunicator:(APCommunicator *)communicator didReceiveData:(NSData *)data fromPeerNamed:(NSString*)peerName;
 
 @optional
 - (void) peerCommunicator: (APCommunicator*)communicator didAcceptPeer:(APPeer*)peer;
