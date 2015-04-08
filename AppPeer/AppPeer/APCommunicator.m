@@ -295,7 +295,14 @@
 - (APPeer*)peerForSocket:(GCDAsyncSocket*)socket{
     if(socket.userData){
         NSString* peerName = [(NSDictionary*)socket.userData valueForKey:kUserDataPeerNameKey];
-        return [_peers valueForKey:peerName];
+        APPeer* peer = [_peers valueForKey:peerName];
+        if(!peer){
+            peer = [[APPeer alloc]init];
+            peer.name = peerName;
+            peer.addresses = [NSMutableArray arrayWithObject:[socket connectedAddress]];
+            [_peers setObject:peer forKey:peerName];
+        }
+        return peer;
     }
     
     return nil;
