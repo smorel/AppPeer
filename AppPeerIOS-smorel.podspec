@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "AppPeerIOS-smorel"
   s.version      = "1.0.0"
-  s.summary      = "Synchronize your application resources from dropbox to the app and experience dynamic reload on simulator and devices."
+  s.summary      = "AppPeer is a multipeer connection framework that works both on iOS and Mac."
   s.homepage     = "https://github.com/smorel/AppPeer"
   s.license      = { :type => 'Apache Licence 2.0', :file => 'LICENSE.txt' }
   s.author       = { 'Sebastien Morel' => 'morel.sebastien@gmail.com' }
