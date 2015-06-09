@@ -138,6 +138,7 @@
 		0DD237F818687C0100C57209 /* APDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDebug.h; sourceTree = "<group>"; };
 		0DF5897F1886BE9A000B4F28 /* APPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPeer.h; sourceTree = "<group>"; };
 		0DF589801886BE9A000B4F28 /* APPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPeer.m; sourceTree = "<group>"; };
+		D9C3B0C21B2752E300B2C07D /* AppPeerIOS-smorel.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = "AppPeerIOS-smorel.podspec"; path = "../../AppPeerIOS-smorel.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +231,7 @@
 		0D6866ED18283B0E00BF2519 /* AppPeer */ = {
 			isa = PBXGroup;
 			children = (
+				D9C3B0C21B2752E300B2C07D /* AppPeerIOS-smorel.podspec */,
 				0D4E227718299A2400BE60B5 /* Classes */,
 				0D6866EE18283B0E00BF2519 /* MAC Supporting Files */,
 				0D4E225F1829972C00BE60B5 /* iOS Supporting Files */,

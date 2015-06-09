@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '/usr/include/libxml2', 'OTHER_LDFLAGS' => '-ObjC -all_load -weak_library /usr/lib/libstdc++.dylib' } 
 
-  s.dependency 'cocoaasyncsocket'
+  s.dependency 'CocoaAsyncSocket'
 
   s.requires_arc = true
 
