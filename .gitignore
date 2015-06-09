@@ -1,3 +1,6 @@
 .DS_Store
 
 xcuserdata
+
+/AppPeer/AppPeer.xcodeproj/project.xcworkspace/xcshareddata/
+/.DS_Store
