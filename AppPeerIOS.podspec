@@ -26,9 +26,4 @@ Pod::Spec.new do |s|
     al.private_header_files = 'AppPeer/AppPeer/**/*.{h}'
   end
 
-
-  s.prepare_command = <<-CMD
-     sudo cp -rf "Documentation/File Templates/" "$HOME/Library/Developer/Xcode/Templates/File Templates/"
-    CMD
-
 end
