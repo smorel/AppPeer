@@ -552,6 +552,7 @@
 				GCC_PREFIX_HEADER = "AppPeer/AppPeer-Prefix.pch";
 				INFOPLIST_FILE = "AppPeer/AppPeerIOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = AppPeerIOS;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
